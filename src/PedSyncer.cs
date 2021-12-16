@@ -27,8 +27,8 @@ namespace PedSyncer
             //Prepare the EntitySync - Ped Limit is 256
             AltEntitySync.Init(
                 4,
-                100,
-                true,
+                (threadId) => 100,
+                (threadId) => false,
                 (threadCount, repository) => new PedSyncerNetworkLayer(threadCount, repository),
                 (entity, threadCount) => (entity.Id % threadCount),
                 (entityId, entityType, threadCount) => (entityId % threadCount),
