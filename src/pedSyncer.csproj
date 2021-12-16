@@ -1,12 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputPath>F:/Projekte/pedSyncer/</OutputPath>
+    <OutputPath></OutputPath>
     <WarningLevel>0</WarningLevel>
   </PropertyGroup>
 
@@ -28,11 +28,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AltV.Net" Version="1.38.4" />
-    <PackageReference Include="AltV.Net.EntitySync" Version="1.7.0-dev-preview" />
-    <PackageReference Include="AltV.Net.EntitySync.ServerEvent" Version="1.7.0-dev-preview" />
-    <PackageReference Include="MessagePack" Version="2.1.115" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="AltV.Net" Version="7.1.7-dev60" />
+    <PackageReference Include="AltV.Net.EntitySync" Version="1.13.0" />
+    <PackageReference Include="AltV.Net.EntitySync.ServerEvent" Version="7.1.7-dev60" />
+    <PackageReference Include="MessagePack" Version="2.3.85" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
 </Project>

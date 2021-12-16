@@ -1,7 +1,12 @@
 {
   "profiles": {
     "pedSyncer": {
-      "commandName": "Project"
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\RAMA\\source\\repos\\altv-server\\altv-server.exe",
+      "workingDirectory": "C:\\Users\\RAMA\\source\\repos\\altv-server",
+      "environmentVariables": {
+        "CSHARP_MODULE_DISABLE_COLLECTIBLE": "true"
+      }
     }
   }
 }
