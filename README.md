@@ -1,3 +1,28 @@
+## NOTE FOR HELP!
+
+I am currently in the process of repairing this resource, and getting it to work with the latest alt:V. Here's what's been done so far.
+
+* Functioning peds and scenarios (talking on the street, that ambient stuff).
+* Updated most natives with new parameters / new natives entirely.
+* Updated server side code to the latest AltV.Net nuget package, with .net 6.0.
+* Updated the shipped binaries with the newest ones.
+* Updated ped hashmap with all the newest peds (thanks @phyziyx). [script here](https://gist.github.com/phyziyx/289f8f6395c347bdd1c6146c65e86ec1)
+
+If you can help in any way shape or form, I would greatly appreciate the assistance offered.
+
+ROADMAP:
+
+- [ ] TypeScript rewrite of the client side.
+- [ ] C++ rewrite of the server side.
+- [X] Functioning peds that wander about.
+- [ ] Peds that drive vehicles around.
+
+BUGS:
+
+* Peds cannot currently drive vehicles around (though they are spawned in vehicles).
+* There is an issue with Ped.setPath that I cannot seem to wrap my head around.
+* Fix ped component variation issues (I have no clue how this works so I will need help).
+
 # pedSyncer
 
 This AltV-resource is an experiment for synchronize peds. I publish this resource to give an idea how this can work. Furthermore, I also published it to allow contribution by other developers to improve this experiment.
