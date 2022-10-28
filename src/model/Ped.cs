@@ -804,8 +804,8 @@ namespace PedSyncer.Model
             this.CurrentNavmashPositionsIndex = 0;
             //AltAsync.Do(() =>
             //{
-                AltEntitySync.AddEntity(this);
-                Alt.EmitAllClients("pedSyncer:server:create", this);
+            AltEntitySync.AddEntity(this);
+            Alt.EmitAllClients("pedSyncer:server:create", this);
             //});
         }
 
@@ -1164,6 +1164,7 @@ namespace PedSyncer.Model
         //Method to generate wandering peds as citizens
         public static void CreateCitizenPeds(int PedCount)
         {
+            Console.WriteLine("CreateCitizenPeds called, with pedCount " + PedCount);
             NavigationMesh NavigationMeshControl = NavigationMesh.getInstance();
 
             int ScenarioCount, WanderingCount;
